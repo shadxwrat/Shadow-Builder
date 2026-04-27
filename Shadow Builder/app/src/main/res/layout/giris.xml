@@ -1,0 +1,198 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Giriş Yap"
+				android:textSize="25sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/linearinfo"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:padding="8dp"
+			android:background="#212121"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linearkutucuk"
+				android:layout_width="80dp"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="#212121"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/pre"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Kayıt olmak tamamen ücretsiz"
+				android:textSize="17sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear5"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:padding="8dp"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/linearlogin"
+			android:layout_width="match_parent"
+			android:layout_height="350dp"
+			android:padding="8dp"
+			android:background="#212121"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Bilgilerini Gir"
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayoutmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#1A1A1A"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:textSize="17sp"
+					android:textColor="#FFFFFF"
+					android:hint="Mailinizi Giriniz"
+					android:textColorHint="#FFFFFF" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<LinearLayout
+				android:id="@+id/linear9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/textinputlayout2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#1A1A1A"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="@android:color/transparent"
+					android:textSize="17sp"
+					android:textColor="#FFFFFF"
+					android:hint="Şifreyi Giriniz"
+					android:textColorHint="#FFFFFF" />
+			</com.google.android.material.textfield.TextInputLayout>
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Not: Satın aldığınız bilgiler ile giriş yapınız."
+					android:textSize="15sp"
+					android:textStyle="italic" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear11"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/button3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Kayıt Ol"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:layout_weight="2"
+					style="?attr/materialButtonOutlinedStyle"
+					android:checkable="true" />
+				<LinearLayout
+					android:id="@+id/linear12"
+					android:layout_width="20dp"
+					android:layout_height="match_parent"
+					android:padding="8dp"
+					android:orientation="vertical"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/button4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Giriş Yap"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:layout_weight="2"
+					style="?attr/materialButtonTonalStyle"
+					android:checkable="true" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
