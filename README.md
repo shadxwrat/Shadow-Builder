@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/shadxwrat/Shadow-Builder/main/assets/banner.png" alt="Shadow Builder Banner" width="100%" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+  <img src="20260427_205557.jpg" alt="Shadow Builder Banner" width="100%" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
   
   <br><br>
   
