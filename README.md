@@ -52,7 +52,7 @@
 
   <br><br>
   
-  <a href="https://github.com/shadxwrat/Shadow-Builder/releases/tag/v0.5">
+  <a href="https://github.com/shadxwrat/Shadow-Builder/releases/tag/Main">
     <img src="https://img.shields.io/badge/⬇️_SON_SÜRÜMÜ_İNDİR-v0.5_APK-2ea44f?style=for-the-badge&logo=android&logoColor=white&labelColor=161b22&color=238636&border_color=2ea44f" width="350" alt="Download">
   </a>
   
